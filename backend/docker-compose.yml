@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: trackforge-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: trackforge
+      POSTGRES_USER: trackforge
+      POSTGRES_PASSWORD: trackforge_dev_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
