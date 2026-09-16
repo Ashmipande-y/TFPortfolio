@@ -5,6 +5,7 @@ from app.models.gate import Gate
 from app.models.zone import Zone
 from app.models.asset import Asset
 from app.models.asset_tag import AssetTag, AssetTagType
+from app.models.movement_event import MovementEvent, MovementEventType
 
 __all__ = [
     "Organization",
@@ -16,5 +17,8 @@ __all__ = [
     "Asset",
     "AssetTag",
     "AssetTagType",
+    "MovementEvent",
+    "MovementEventType",
+    
     
 ]
