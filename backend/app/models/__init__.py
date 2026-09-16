@@ -16,6 +16,12 @@ from app.models.vehicle import Vehicle
 from app.models.gate_pass import GatePass, GatePassStatus, GatePassType
 from app.models.device import Device, DeviceType
 from app.models.gate_pass_asset import GatePassAsset
+from app.models.document import Document, DocumentType
+from app.models.notification import (
+    Notification,
+    NotificationChannel,
+    NotificationStatus,
+)
 
 __all__ = [
     "Organization",
@@ -40,5 +46,9 @@ __all__ = [
     "Device",
     "DeviceType",
     "GatePassAsset",
-
+    "Document",
+    "DocumentType",
+    "Notification",
+    "NotificationStatus",
+    "NotificationChannel",
 ]
