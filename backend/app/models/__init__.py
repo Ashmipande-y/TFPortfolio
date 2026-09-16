@@ -6,7 +6,12 @@ from app.models.zone import Zone
 from app.models.asset import Asset
 from app.models.asset_tag import AssetTag, AssetTagType
 from app.models.movement_event import MovementEvent, MovementEventType
-
+from app.models.alert import (
+    Alert,
+    AlertSeverity,
+    AlertStatus,
+    AlertType,
+)
 __all__ = [
     "Organization",
     "User",
@@ -19,6 +24,8 @@ __all__ = [
     "AssetTagType",
     "MovementEvent",
     "MovementEventType",
-    
-    
+    "Alert",
+    "AlertSeverity",
+    "AlertStatus",
+    "AlertType",    
 ]
