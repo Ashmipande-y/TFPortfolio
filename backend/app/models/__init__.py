@@ -12,6 +12,9 @@ from app.models.alert import (
     AlertStatus,
     AlertType,
 )
+from app.models.vehicle import Vehicle
+
+
 __all__ = [
     "Organization",
     "User",
@@ -27,5 +30,6 @@ __all__ = [
     "Alert",
     "AlertSeverity",
     "AlertStatus",
-    "AlertType",    
+    "AlertType",   
+    "Vehicle", 
 ]
