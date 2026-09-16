@@ -66,8 +66,8 @@ class MovementEvent(UUIDPrimaryKeyMixin, Base):
         nullable=False,
     )
 
-    device_id: Mapped[str | None] = mapped_column(
-        String(255),
+    device_id: Mapped[UUID | None] = mapped_column(
+        ForeignKey("devices.id", ondelete="SET NULL"),
         nullable=True,
         index=True,
     )

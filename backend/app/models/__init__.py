@@ -15,7 +15,7 @@ from app.models.alert import (
 from app.models.vehicle import Vehicle
 from app.models.gate_pass import GatePass, GatePassStatus, GatePassType
 from app.models.device import Device, DeviceType
-
+from app.models.gate_pass_asset import GatePassAsset
 
 __all__ = [
     "Organization",
@@ -39,5 +39,6 @@ __all__ = [
     "GatePassStatus",
     "Device",
     "DeviceType",
+    "GatePassAsset",
 
 ]
