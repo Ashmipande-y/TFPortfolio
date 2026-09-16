@@ -3,6 +3,8 @@ from app.models.user import User, UserRole
 from app.models.location import Location
 from app.models.gate import Gate
 from app.models.zone import Zone
+from app.models.asset import Asset
+from app.models.asset_tag import AssetTag, AssetTagType
 
 __all__ = [
     "Organization",
@@ -11,5 +13,8 @@ __all__ = [
     "Location",
     "Gate",
     "Zone",
+    "Asset",
+    "AssetTag",
+    "AssetTagType",
     
 ]
