@@ -13,6 +13,7 @@ from app.models.alert import (
     AlertType,
 )
 from app.models.vehicle import Vehicle
+from app.models.gate_pass import GatePass, GatePassStatus, GatePassType
 
 
 __all__ = [
@@ -32,4 +33,8 @@ __all__ = [
     "AlertStatus",
     "AlertType",   
     "Vehicle", 
+    "GatePass",
+    "GatePassType",
+    "GatePassStatus",
+    
 ]
