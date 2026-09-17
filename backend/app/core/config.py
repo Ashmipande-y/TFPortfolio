@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     database_url: str
 
     redis_url: str | None = None
-    jwt_secret: str | None = None
+    jwt_secret: str 
     sarvam_api_key: str | None = None
 
     model_config = SettingsConfigDict(
